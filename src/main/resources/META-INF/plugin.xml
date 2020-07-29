@@ -1,19 +1,16 @@
 <idea-plugin>
-    <id>com.github.lurunze.mybatissql</id>
-    <name>mybatis-sql</name>
+    <id>com.github.lurunze.mybatis.sql</id>
+    <name>Mybatis SQL</name>
     <vendor>lurunze</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.lurunze.mybatissql.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.lurunze.mybatissql.services.MyProjectService"/>
-    </extensions>
-
-    <projectListeners>
-        <listener class="com.github.lurunze.mybatissql.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </projectListeners>
+    <actions>
+        <action id="SelectLogActionID" class="com.github.lurunze.mybatis.sql.action.SelectLogAction" text="Mybatis Sql" description="Mybatis Sql">
+            <add-to-group group-id="ConsoleView.PopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift meta H"/>
+        </action>
+    </actions>
 </idea-plugin>

@@ -1,32 +1,35 @@
-# mybatis-sql
+# Mybatis SQL
 
 ![Build](https://github.com/lurunze/mybatis-sql/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Verify the [pluginGroup](/gradle.properties), [plugin ID](/src/main/resources/META-INF/plugin.xml) and [sources package](/src/main/kotlin).
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html).
-- [ ] [Publish a plugin manually](https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/publishing_plugin.html) for the first time.
-- [ ] Set the Plugin ID in the above README badges.
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+Convert selected Mybatis log to an executable SQL. 
+## Usage
+* Select log containing `Preparing` and `Parameters`.
+* click the right mouse then choose `Mybatis SQL` menu or just use shortcut keys `ctrl + shift + H`.
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be
-extracted by the [Gradle](/build.gradle.kts) during the build process.
+Then the generated executable SQL will pop up as a notification in the lower right corner.
+At the same time, the SQL will also be recorded in  `Event Log` menu in the lower right corner.
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
+## 使用
+* 选择包含 `Preparing` 和 `Parameters` 的日志。
+* 点击鼠标右键，然后选则 `Mybatis SQL` 菜单，或者使用快捷键 `ctrl + shift + H`。
+
+生成的可执行 SQL 会在右下角以通知的形式弹出。同时 SQL 还会被记录在右下角的 `Event Log` 菜单。
+
+<b>
+<a href="https://github.com/lurunze/mybatis-sql">GitHub</a><br>
+</b>
 <!-- Plugin description end -->
 
 ## Installation
 
 - Using IDE built-in plugin system:
   
-  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "mybatis-sql"</kbd> >
+  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Mybatis SQL"</kbd> >
   <kbd>Install Plugin</kbd>
   
 - Manually:
