@@ -1,9 +1,10 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# mybatis-sql Changelog
+# Mybatis SQL Plugin Changelog
 
 ## [Unreleased]
 ## [1.0.0]
+### Added
 - Convert selected Mybatis log to an executable SQL.
 ## [0.0.1]
 ### Added
