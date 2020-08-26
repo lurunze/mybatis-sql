@@ -3,6 +3,9 @@
 # Mybatis SQL Plugin Changelog
 
 ## [Unreleased]
+## [1.0.1]
+### Added
+- Mybatis SQL Plugin icon.
 ## [1.0.0]
 ### Added
 - Convert selected Mybatis log to an executable SQL.
