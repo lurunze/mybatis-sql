@@ -3,6 +3,18 @@
 # Mybatis SQL Plugin Changelog
 
 ## [Unreleased]
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+## [1.0.1]
 ## [1.0.1]
 ### Added
 - Mybatis SQL Plugin icon.
