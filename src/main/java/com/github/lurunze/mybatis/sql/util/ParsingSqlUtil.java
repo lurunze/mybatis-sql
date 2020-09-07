@@ -34,7 +34,7 @@ public class ParsingSqlUtil {
       log = log.trim();
       if (log.contains(StringConst.PREPARING) && !getPreparing) {
         if (log.split(StringConst.PREPARING).length == 1) {
-          throw new RuntimeException("preparing is empty");
+          return "preparing is empty";
         }
         preparing = log.split(StringConst.PREPARING)[1];
         getPreparing = true;
@@ -56,13 +56,18 @@ public class ParsingSqlUtil {
     String[] parameterArray = parameters.split(COMMA);
     int questionMarkCount = StringUtils.countMatches(preparing, QUESTION_MARK);
     if (parameterArray.length != questionMarkCount) {
-      throw new RuntimeException("Parameter mismatch");
+      return "The number of '?' does not match the number of parameters";
     }
 
-    for (String parameter : parameterArray) {
-      preparing = StringUtils.replaceOnce(preparing, QUESTION_MARK, getParameter(parameter));
+    StringBuilder sql = new StringBuilder();
+    for (int i = 0, j = 0; i < preparing.length(); i++) {
+      if (String.valueOf(preparing.charAt(i)).equals(QUESTION_MARK)) {
+        sql.append(getParameter(parameterArray[j++]));
+      } else {
+        sql.append(preparing.charAt(i));
+      }
     }
-    return preparing;
+    return sql.toString();
   }
 
   private static String getParameter(String str) {
