@@ -6,9 +6,9 @@
 
 
 <!-- Plugin description -->
-Convert selected Mybatis log to an executable SQL(Excess log lines will be filtered). 
+Convert selected Mybatis log to an executable SQL. 
 ## Usage
-* Select log containing `Preparing` and `Parameters`.
+* Select log containing `Preparing` and `Parameters`(Excess log lines will be filtered).
 * Click the right mouse then choose `Show SQL` menu or just use shortcut keys `ctrl + shift + H`.
 
 ## 使用
