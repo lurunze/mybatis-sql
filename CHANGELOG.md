@@ -2,25 +2,18 @@
 
 # Mybatis SQL Plugin Changelog
 
-## [Unreleased]
-### Added
-
+## [2.0.0] (2020-09-10)
 ### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
-## [1.0.1]
-## [1.0.1]
+- Optimize performance.
+- Optimize the way to display SQL.
 ### Added
-- Mybatis SQL Plugin icon.
-## [1.0.0]
+- Add a button to copy SQL to clipboard.
+## [1.0.1] (2020-08-26)
+### Added
+- Add Mybatis SQL Plugin icon.
+## [1.0.0] (2020-08-10)
 ### Added
 - Convert selected Mybatis log to an executable SQL.
-## [0.0.1]
+## [0.0.1] (2020-08-10)
 ### Added
 - Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
