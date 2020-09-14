@@ -27,6 +27,7 @@ Convert selected Mybatis log to an executable SQL.
 
 ##Screenshots
 ![](https://github.com/lurunze/mybatis-sql/blob/master/images/screenshots1.png?raw=true)
+
 ![](https://github.com/lurunze/mybatis-sql/blob/master/images/screenshots2.png?raw=true)
 
 <b>
