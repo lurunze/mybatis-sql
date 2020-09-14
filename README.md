@@ -25,6 +25,10 @@ Convert selected Mybatis log to an executable SQL.
 * 鼠标右键，选择 `Show SQL` 菜单（快捷键：`ctrl + shift + H`）展示 SQL。
 * 点击 `COPY TO CLIPBOARD` 按钮复制 SQL。
 
+##Screenshots
+![](https://github.com/lurunze/mybatis-sql/blob/master/images/screenshots1.png?raw=true)
+![](https://github.com/lurunze/mybatis-sql/blob/master/images/screenshots2.png?raw=true)
+
 <b>
 <a href="https://github.com/lurunze/mybatis-sql">GitHub</a><br>
 </b>
