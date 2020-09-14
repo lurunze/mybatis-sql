@@ -8,12 +8,22 @@
 <!-- Plugin description -->
 Convert selected Mybatis log to an executable SQL. 
 ## Usage
-* Select log containing `Preparing` and `Parameters`(Excess log lines will be filtered).
-* Click the right mouse then choose `Show SQL` menu or just use shortcut keys `ctrl + shift + H`.
+### Method 1 (recommended):
+* Select the log containing `Preparing` and `Parameters` (extra lines will be filtered).
+* Right-click the mouse and select the `Copy as SQL` menu (shortcut key: `shift + alt + H`) to copy SQL.
+### Method 2
+* Select the log containing `Preparing` and `Parameters` (extra lines will be filtered).
+* Right-click and select the `Show SQL` menu (shortcut key: `ctrl + shift + H`) to display SQL.
+* Click the `COPY TO CLIPBOARD` button to copy the SQL.
 
 ## 使用
+### 方法1（推荐）：
 * 选择包含 `Preparing` 和 `Parameters` 的日志（多余的行会被过滤）。
-* 点击鼠标右键，然后选择 `Show SQL` 菜单，或者使用快捷键 `ctrl + shift + H`。
+* 鼠标右键，选择 `Copy as SQL` 菜单（快捷键：`shift + alt + H`）复制 SQL。
+### 方法2
+* 选择包含 `Preparing` 和 `Parameters` 的日志（多余的行会被过滤）。
+* 鼠标右键，选择 `Show SQL` 菜单（快捷键：`ctrl + shift + H`）展示 SQL。
+* 点击 `COPY TO CLIPBOARD` 按钮复制 SQL。
 
 <b>
 <a href="https://github.com/lurunze/mybatis-sql">GitHub</a><br>

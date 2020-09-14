@@ -8,9 +8,13 @@
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
-        <action id="SelectLogActionID" class="com.github.lurunze.mybatis.sql.action.SelectLogAction" text="Show SQL" description="Show SQL" icon="PluginIcons.PLUGIN_ICON">
+        <action id="SelectLogActionID" class="com.github.lurunze.mybatis.sql.action.ShowSqlAction" text="Show SQL" description="Show SQL" icon="PluginIcons.PLUGIN_ICON">
             <add-to-group group-id="ConsoleView.PopupMenu" anchor="first"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift meta H"/>
+        </action>
+        <action id="CopyAsSqlAction" class="com.github.lurunze.mybatis.sql.action.CopyAsSqlAction" text="Copy as SQL" description="Copy Mybatis log as an executable SQL" icon="PluginIcons.PLUGIN_ICON">
+            <add-to-group group-id="ConsoleView.PopupMenu" anchor="before" relative-to-action="SelectLogActionID"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift alt H"/>
         </action>
     </actions>
 </idea-plugin>
